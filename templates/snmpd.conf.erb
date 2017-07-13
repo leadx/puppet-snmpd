@@ -2,7 +2,7 @@
 #
 ## Served by:        '<%= scope.lookupvar('::servername') %>'
 ## Module:           '<%= scope.to_hash['module_name'] %>'
-## Template source:  'MODULES<%= template_source.gsub(Regexp.new("^#{Puppet::Node::Environment.current[:modulepath].gsub(':','|')}"),"") %>'
+## Template source:  '/etc/puppet/environments/production/modules/snmpd/templates/snmpd.conf.erb'
 #
 
 sysName <%= scope.lookupvar('snmpd::snmpname') %>
